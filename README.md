@@ -199,6 +199,32 @@ The RedisDict library includes a comprehensive suite of tests that ensure its co
 pip install redis-dict
 ```
 
+## Building a `.deb` Package
+
+To build a Debian package for this project, follow these steps:
+
+1. Install the `stdeb` package:
+   ```bash
+   pip install stdeb
+   ```
+
+2. Run the following command in the root directory of the project (where `setup.py` is located):
+   ```bash
+   python3 setup.py --command-packages=stdeb.command bdist_deb
+   ```
+
+3. The generated `.deb` package will be located in the `deb_dist` directory.
+
+4. To install the package, use:
+   ```bash
+   sudo apt install ./deb_dist/python3-redis-dict_*.deb
+   ```
+
+5. Verify the installation by importing the package in Python:
+   ```bash
+   python3 -c "import redisdict"
+   ```
+
 ### Note
 * Please be aware that this project is currently being utilized by various organizations in their production environments. If you have any questions or concerns, feel free to raise issues
 * This project only uses redis as dependency

@@ -2,9 +2,30 @@
 __pycache__
 *.pyc
 *.egg-info
+*.egg
 
-build
-dist
-venv
+build/
+dist/
+venv/
+.venv/
+.pybuild/
+.pytest_cache/
 
 .hypothesis/
+
+# Debian package related
+debian/python3-redis-dict/
+debian/.debhelper/
+debian/python3-redis-dict.substvars
+debian/files
+debian/debhelper-build-stamp
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Debian package related
+deb_dist/
+dist/

@@ -9,7 +9,7 @@ with io.open("README.md", "r", encoding="utf-8") as fh:
 
 
 setup(
-    name='redis dict',
+    name='redis-dict',
     author='Melvin Bijman',
     author_email='bijman.m.m@gmail.com',
 
@@ -22,7 +22,7 @@ setup(
     install_requires=['redis',],
     license='MIT',
 
-    url='https://github.com/Attumm/redisdict',
+    url='https://github.com/beaglesystems/redis-dict',
 
     classifiers=[
         'Development Status :: 5 - Production/Stable',
@@ -43,4 +43,3 @@ setup(
         'Programming Language :: Python :: 3.11',
     ],
 )
-
